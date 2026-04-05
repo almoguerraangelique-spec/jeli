@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Layout Activity</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #dddddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        main {
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 10px;
+        }
+
+        main section:first-of-type {
+            grid-column: span 2;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 16px;
+            margin-top: 20px;
+            grid-column: span 2;
+        }
+
+        .card {
+            background-color: white;
+            padding: 16px;
+            flex: 1;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Class Page</h1>
+    <p>Learning CSS step by step</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Lessons</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Lesson Overview</h2>
+        <p>CSS controls how the page looks.</p>
+    </section>
+
+    <section>
+        <h2>Tasks</h2>
+        <ul>
+            <li>Colors</li>
+            <li>Spacing</li>
+            <li>Fonts</li>
+        </ul>
+    </section>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Card 1</h3>
+            <p>This is a card</p>
+        </div>
+
+        <div class="card">
+            <h3>Card 2</h3>
+            <p>This is a card</p>
+        </div>
+
+        <div class="card">
+            <h3>Card 3</h3>
+            <p>This is a card</p>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 CSS Practice Page</p>
+</footer>
+
+</body>
+</html>
